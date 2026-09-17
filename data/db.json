@@ -1,0 +1,49 @@
+{
+  "users": [
+    {"id":1,"name":"Andrea Salazar","email":"admin@dentagenda.local","password":"Admin123!","role":"admin","label":"Administrador"},
+    {"id":2,"name":"Dr. Mateo Ríos","email":"odontologo@dentagenda.local","password":"Odonto123!","role":"dentist","label":"Odontólogo"},
+    {"id":3,"name":"Lucía Vargas","email":"recepcion@dentagenda.local","password":"Recep123!","role":"receptionist","label":"Recepción"},
+    {"id":4,"name":"Camila Torres","email":"caja@dentagenda.local","password":"Caja123!","role":"cashier","label":"Caja"}
+  ],
+  "patients": [
+    {"id":1,"name":"Valeria Mendoza","ci":"7845123","phone":"76543210","email":"valeria@email.com","birth":"1995-04-12"},
+    {"id":2,"name":"Carlos Rojas","ci":"6512448","phone":"70112233","email":"carlos@email.com","birth":"1988-11-03"},
+    {"id":3,"name":"Sofía Quiroga","ci":"9055321","phone":"77744110","email":"sofia@email.com","birth":"2001-07-20"},
+    {"id":4,"name":"Miguel Fernández","ci":"5566778","phone":"72009876","email":"miguel@email.com","birth":"1979-01-15"},
+    {"id":5,"name":"Daniela Pérez","ci":"8321456","phone":"69001122","email":"daniela@email.com","birth":"1992-09-09"},
+    {"id":6,"name":"Jorge Lima","ci":"4477112","phone":"71234567","email":"jorge@email.com","birth":"1985-05-18"}
+  ],
+  "professionals": [
+    {"id":1,"name":"Dr. Mateo Ríos","specialty":"Odontología general","phone":"72010001","photo":"https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=240&q=80"},
+    {"id":2,"name":"Dra. Elena Suárez","specialty":"Ortodoncia","phone":"72010002","photo":"https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=240&q=80"},
+    {"id":3,"name":"Dr. Pablo Céspedes","specialty":"Endodoncia","phone":"72010003","photo":"https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=240&q=80"}
+  ],
+  "appointments": [
+    {"id":1,"date":"2026-09-16","time":"08:30","patient":"Valeria Mendoza","doctor":"Dr. Mateo Ríos","reason":"Limpieza dental","status":"Confirmada"},
+    {"id":2,"date":"2026-09-16","time":"10:00","patient":"Carlos Rojas","doctor":"Dra. Elena Suárez","reason":"Control de ortodoncia","status":"Atendida"},
+    {"id":3,"date":"2026-09-16","time":"11:30","patient":"Sofía Quiroga","doctor":"Dr. Mateo Ríos","reason":"Dolor molar","status":"Pendiente"},
+    {"id":4,"date":"2026-09-16","time":"15:00","patient":"Miguel Fernández","doctor":"Dr. Pablo Céspedes","reason":"Endodoncia","status":"Confirmada"},
+    {"id":5,"date":"2026-09-17","time":"09:00","patient":"Daniela Pérez","doctor":"Dra. Elena Suárez","reason":"Evaluación estética","status":"Confirmada"},
+    {"id":6,"date":"2026-09-17","time":"16:30","patient":"Jorge Lima","doctor":"Dr. Mateo Ríos","reason":"Extracción","status":"Pendiente"}
+  ],
+  "treatments": [
+    {"id":1,"patient":"Valeria Mendoza","name":"Profilaxis + fluoración","progress":100,"cost":280,"status":"Finalizado"},
+    {"id":2,"patient":"Carlos Rojas","name":"Ortodoncia mensual","progress":55,"cost":3200,"status":"En curso"},
+    {"id":3,"patient":"Miguel Fernández","name":"Endodoncia pieza 26","progress":70,"cost":950,"status":"En curso"},
+    {"id":4,"patient":"Sofía Quiroga","name":"Restauración de resina","progress":20,"cost":420,"status":"Planificado"}
+  ],
+  "payments": [
+    {"id":1,"date":"2026-09-16","patient":"Valeria Mendoza","concept":"Profilaxis","method":"QR","amount":280,"status":"Pagado"},
+    {"id":2,"date":"2026-09-16","patient":"Carlos Rojas","concept":"Control ortodoncia","method":"Efectivo","amount":250,"status":"Pagado"},
+    {"id":3,"date":"2026-09-15","patient":"Miguel Fernández","concept":"Endodoncia - anticipo","method":"Transferencia","amount":500,"status":"Pagado"},
+    {"id":4,"date":"2026-09-14","patient":"Sofía Quiroga","concept":"Evaluación","method":"Efectivo","amount":100,"status":"Pendiente"}
+  ],
+  "inventory": [
+    {"id":1,"name":"Guantes de nitrilo","category":"Protección","stock":18,"min":20,"unit":"cajas"},
+    {"id":2,"name":"Mascarillas KN95","category":"Protección","stock":46,"min":15,"unit":"cajas"},
+    {"id":3,"name":"Resina fotocurable A2","category":"Restauración","stock":9,"min":5,"unit":"jeringas"},
+    {"id":4,"name":"Anestesia dental","category":"Medicamentos","stock":22,"min":10,"unit":"cajas"},
+    {"id":5,"name":"Ácido grabador","category":"Restauración","stock":4,"min":6,"unit":"unidades"},
+    {"id":6,"name":"Gasas estériles","category":"Desechables","stock":31,"min":12,"unit":"paquetes"}
+  ]
+}
